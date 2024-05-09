@@ -1,0 +1,59 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-title h1 span {
+  /* /* background: linear-gradient(270deg, #df8908 10%, #b415ff 100%); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  font-size: 50px;
+}
+
+.icon-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon-style {
+  font-size: 60px;
+}
+.services p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.image-wraper {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px; /* Add some margin between images */
+}
+
+.dotnet-image {
+  width: 100px;
+}
+.icon-wrapper:hover {
+  transform: scale(1.1);
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+}
+.image:hover {
+  transform: scale(1.1);
+  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+}
