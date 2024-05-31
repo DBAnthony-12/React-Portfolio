@@ -5,7 +5,7 @@ import { ProjectCard } from "./ProjectCard"; // Ensure this path is correct
 import project1 from "../../assets/project1.png";
 import project2 from "../../assets/BuzzChatApp.png";
 import project3 from "../../assets/Bankingapp.png";
-
+import Card from 'react-bootstrap/Card';
 import LanguagesSection from "./LanguagesSection";
 
 
@@ -22,7 +22,7 @@ export const Projects = () => {
       title: "Chat App",
       description: "Chat App",
       imgUrl: project2,
-      link: "#" // Replace "#" with the actual link for the Chat App
+      link: "https://buzzchatapp.onrender.com" // Replace "#" with the actual link for the Chat App
     },
     {
       title: "Banking App",
@@ -67,7 +67,9 @@ export const Projects = () => {
                     <LanguagesSection/>
                 </Tab.Pane>
                 <Tab.Pane eventKey="third" style={{ textAlign: "center", fontSize:"24px" }}>
-                    Studied at Rosebank College, completed my Diploma in Software Development
+                    Went to JG Meiring High School. <br></br>
+                    Studied at Rosebank College, completed my Diploma in Software Development. <br></br>
+                    CapaCiti: Completing a 6 month course.
                 </Tab.Pane>
 
               </Tab.Content>

@@ -7,14 +7,12 @@ const Hero = () => {
     <div className="hero">
       <img src={me2} alt="" />
       <h1>
-        <span>Hi, I am Dilshaad Anthony.</span> I am a frontend and backend
+        <span>Hi, I am Dilshaad Anthony.</span><br></br> I am a frontend and backend
         Software Developer
       </h1>
       <p>
-        I am Dilshaad, a passionate person who is creative with web development
-        with a passion for creating responsive websites and user-friendly
-        websites. I learnt various of Languages that consist of different
-        platforms of Software development.
+      Hello!, I'm a web development enthusiast, dedicated to crafting responsive and user-friendly websites. With a diverse skill set in various 
+      programming languages, I bring creativity and innovation to every project. Let's build something amazing together!
       </p>
       <div className="hero-action">
         <div className="hero-connect">Connect with me</div>

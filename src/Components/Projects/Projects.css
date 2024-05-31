@@ -227,6 +227,32 @@
     font-size: 16px;
     color: #666;
   }
+
+  @media screen and (max-width: 768px) {
+    .skills-section-card, .framework-section-card, .database-section-card {
+      width: 100%; /* Change card width to fit smaller screens */
+      margin: 10px auto; /* Center cards horizontally */
+      padding: 20px;
+    }
+  
+    .skills-section-img img, .framework-section-img img, .database-section-img img {
+      width: 80px; /* Decrease image size on smaller screens */
+      height: 80px;
+    }
+    
+    .section-title, .framework-section-title, .database-title {
+      font-size: 20px; /* Decrease title font size on smaller screens */
+    }
+    
+    .skills-section-heading, .framework-section-heading, .database-section-heading {
+      font-size: 28px; /* Decrease heading font size on smaller screens */
+    }
+  
+    .portfolio-container {
+      width: 90%; /* Adjust container width for smaller screens */
+    }
+  }
+  
   
  
   

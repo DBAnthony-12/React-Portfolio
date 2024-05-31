@@ -20,18 +20,18 @@ const About = () => {
         <div className="about-right">
           <div className="about-paragraph">
             <p>
-              I comleted my studies in software development and my journey is to
-              become a full stack developer. <br />I have built websites with
-              the languages: HTML, CSS, JavaSCript. I have also built apps with
-              Kotlin <br />
-              and Java.
-              <br /> I am happy to take on clients projects and build my way up
-              on this journery.
+              Hi, My name is Dilshaad. I am a Software Developer with a passion for IT especially for my career wise. I enjoy coding and I have always liked computers. <br></br>
+              I completed my studies in Software Development at Rosebank College which lead me to my career where I am at now. <br></br> I am dedicated to helping others with work as well as making websites for people who are in need to start a business or for any reason why a website is needed. <br></br> 
+              i also push myself into the technology boundaries to solve any programming problem and find a solution to the problem. When I am not busy with coding or debugging, I intend to find something to keep myself occupied. <br></br><br></br>
+
+              I believe that learning new things can make an improvement that is why I enjoy learning new programming languages and debugging problems <br></br>if I run into any problems.
+              I started to learn how to code in hugh school and college and because of my interested in coding, I decided to take this career path. <br></br> 
+              I am open to anyone who wants me to make websites for them. Do not hesitate to conatct me. 
             </p>
           </div>{" "}
           <br />
           <br />
-          <div className="about-skills">
+          {/* <div className="about-skills">
             <div className="about-skill">
               <p>HTML & CSS</p>
               <hr style={{ width: "50%" }} />
@@ -68,7 +68,7 @@ const About = () => {
                 <p> App Development</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
