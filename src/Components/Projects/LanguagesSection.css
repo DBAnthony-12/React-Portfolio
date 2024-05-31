@@ -1,0 +1,56 @@
+.languages-section {
+    padding: 20px;
+  }
+  
+  .skills-section, .framework-section, .database-section {
+    margin-bottom: 40px;
+  }
+  
+  .portfolio-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .section-title, .framework-section-title, .database-title {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .skills-section-heading, .framework-section-heading, .database-section-heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .skills-section-container, .framework-section-container, .database-section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skills-section-card, .framework-section-card, .database-section-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .skills-section-img img, .framework-section-img img, .database-section-img img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .skills-section-title, .framework-title, .database-section-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .skills-section-description, .framework-section-description, .database-section-description {
+    font-size: 16px;
+    color: #666;
+  }
+  

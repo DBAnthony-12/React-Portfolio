@@ -5,6 +5,29 @@ import emailme from "../../assets/EmailMe.png";
 import location from "../../assets/Pin_Location.png";
 
 const Contact = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "2a591765-5d65-490d-9547-566393d613ca");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      alert(res.message);
+    }
+  };
+  
   return (
     <div className="contact">
       <div className="contact-title">
@@ -37,7 +60,7 @@ const Contact = () => {
         </div>
 
         <div class="form-container">
-          <form class="contact-right">
+          <form onSubmit={onSubmit} class="contact-right">
             <label for="name">Name</label>
             <input
               type="text"
