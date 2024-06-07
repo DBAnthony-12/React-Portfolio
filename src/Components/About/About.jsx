@@ -18,16 +18,21 @@ const About = () => {
         </div>
 
         <div className="about-right">
-          <div className="about-paragraph">
-            <p>
-              Hi, My name is Dilshaad. I am a Software Developer with a passion for IT especially for my career wise. I enjoy coding and I have always liked computers. <br></br>
-              I completed my studies in Software Development at Rosebank College which lead me to my career where I am at now. <br></br> I am dedicated to helping others with work as well as making websites for people who are in need to start a business or for any reason why a website is needed. <br></br> 
-              i also push myself into the technology boundaries to solve any programming problem and find a solution to the problem. When I am not busy with coding or debugging, I intend to find something to keep myself occupied. <br></br><br></br>
-
-              I believe that learning new things can make an improvement that is why I enjoy learning new programming languages and debugging problems <br></br>if I run into any problems.
-              I started to learn how to code in hugh school and college and because of my interested in coding, I decided to take this career path. <br></br> 
-              I am open to anyone who wants me to make websites for them. Do not hesitate to conatct me. 
-            </p>
+        <div className="about-paragraph">
+          <p>
+            Hi, my name is Dilshaad. I am a passionate Software Developer with a deep enthusiasm for the IT field. My journey began with a love for computers and coding, which naturally led me 
+            to pursue a career in software development. I completed my studies in Software Development at Rosebank College, which laid the foundation for my current career.
+            I am dedicated to helping others by developing websites for those starting businesses or needing an online presence for various reasons. I continuously push the 
+            boundaries of technology to solve programming problems and find innovative solutions. When not coding or debugging, I enjoy keeping myself engaged with new 
+            challenges and activities. Over the course of my 3-year study period, I have acquired a diverse skill set in various programming languages, frameworks, 
+            and tools. My expertise includes:
+            <ul>
+              <li>Frontend Development: Crafting intuitive and dynamic user interfaces.</li>
+              <li>Backend Development: Building robust server-side applications and APIs.</li>
+              <li>Database Management: Ensuring efficient data storage and retrieval.</li>
+              <li>DevOps: Streamlining deployment processes and maintaining scalable infrastructures.</li>
+            </ul>
+          </p>
           </div>{" "}
           <br />
           <br />

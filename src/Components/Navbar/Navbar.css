@@ -12,6 +12,17 @@
   gap: 20px;
   font-size: 20px;
 }
+.nav-menu li a {
+  text-decoration: none;
+  color: #000; /* Default color for the links */
+  transition: color 0.3s;
+  background: 0.3s; /* Transition effect for color and background */
+}
+
+.nav-menu li a:hover {
+  color: #fff; /* Change text color on hover */
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%); /* Gradient background on hover */
+}
 
 img {
   height: 125px;
@@ -25,10 +36,23 @@ img {
   font-size: 22px;
   cursor: pointer;
   transition: 0.5s;
+  display: flex; /* Flexbox for better alignment */
+  gap: 20px; /* Space between icons */
+  align-items: center; /* Center align the icons vertically */
+  justify-content: center; /* Center align the icons horizontally */
+}
+
+.social-icon {
+  font-size: 2rem; /* Increase icon size */
+  color: #fff; /* Adjust color as needed */
+  transition: color 0.3s;
 }
 
 .nav-connect:hover {
   transform: scale(1.05);
+}
+.social-icon:hover {
+  color: rgb(105, 105, 221);
 }
 
 .menu-icon, .close-icon{
@@ -36,6 +60,7 @@ img {
   font-size: 24px;
   cursor: pointer;
 }
+
 
 /* Sidebar styles */
 .sidebar {

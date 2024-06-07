@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
-  margin: 30px;
+  margin: 20px;
 }
 
 .about-title {
@@ -17,30 +17,44 @@
 
 .about-sections {
   display: flex;
-  gap: 20px;
-  align-items: flex-start; /* Align items horizontally */
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
 }
 
-.about-left,
 .about-right {
-  padding-left: 0%;
+  flex: 2;
+  padding: 20px;
 }
 
 .about-paragraph {
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: 0; /* Remove default top margin */
-  margin-bottom: 0; /* Remove default bottom margin */
+  max-width: 600px;
 }
+
+.about-paragraph p {
+  /* line-height: 1.6; */
+  font-size: 18px;
+  text-align: center;
+}
+
+.about-paragraph ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-paragraph li {
+  margin-bottom: 10px;
+}
+
 
 .about-left img {
   width: 100%; /* Ensure the image fills its container */
-  max-width: 300px; /* Set a maximum width for the image */
+  max-width: 350px; /* Set a maximum width for the image */
   height: auto; /* Let the height adjust proportionally */
   border-radius: 50px;
 }
 
-.about-skills {
+/* .about-skills {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -97,7 +111,7 @@
 .about-achievement:hover {
   transform: scale(1.12);
   transition: 0.5s;
-}
+} */
 
 @media(max-width: 768px){
   .about{
@@ -113,17 +127,28 @@
     width: 130px;
     right: -20px;
   }
-  .about-sections{
-    flex-direction: column;
+  .about-sections {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
   }
-  .about-left{
-    display: none;
+
+  .about-right {
+    flex: none; /* Reset the flex property to allow it to grow based on content */
+    padding: 0;
+    margin-top: 20px; /* Add some space between the sections */
+    text-align: center; /* Center-align text content */
   }
-  .about-paragraph{
-    font-size: 18px;
-    line-height: 32px;
+
+  .about-paragraph {
+    max-width: 100%;
+    padding: 0 20px; /* Add some horizontal padding for better readability */
   }
-  .about-skill{
+
+  .about-left img {
+    border-radius: 10px; /* Adjust border radius for smaller screens */
+  }
+}
+  /* .about-skill{
     gap: 20px;
     align-items: center;
   }
@@ -146,5 +171,5 @@
   .about-achievement p{
     text-align: center;
     font-size: 16px;
-  }
-}
+  } */
+

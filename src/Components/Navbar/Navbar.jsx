@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import logo from "../../assets/nameLogo.png";
 import "./Navbar.css";
 
@@ -32,13 +33,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="skills-section" spy={true} smooth={true} offset={5} duration={500} onClick={closeMenu}>
-            Languages
-          </Link>
-        </li>
-        <li>
           <Link to="projects" spy={true} smooth={true} offset={50} duration={500} onClick={closeMenu}>
-            Projects
+            Projects/ Languages
           </Link>
         </li>
         <li>
@@ -48,9 +44,12 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="nav-connect">
-        <Link to="contact" spy={true} smooth={true} offset={5} duration={500} onClick={closeMenu}>
-          Connect with me
-        </Link>
+        <a href="https://github.com/DBAnthony-12/chatApp" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faGithub} className="social-icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/dilshaad-b-anthony-79455b270/" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
+        </a>
       </div>
       <div className={`sidebar ${isSidebarOpen ? 'active' : ''}`}>
         <FontAwesomeIcon icon={faTimes} className="close-icon" onClick={toggleSidebar} />
