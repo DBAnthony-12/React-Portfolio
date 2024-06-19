@@ -51,6 +51,8 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
         </a>
       </div>
+
+      {/* sidebar */}
       <div className={`sidebar ${isSidebarOpen ? 'active' : ''}`}>
         <FontAwesomeIcon icon={faTimes} className="close-icon" onClick={toggleSidebar} />
         <ul>
@@ -65,8 +67,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="language" spy={true} smooth={true} offset={5} duration={500} onClick={closeMenu}>
-              Languages
+            <Link to="projects" spy={true} smooth={true} offset={5} duration={500} onClick={closeMenu}>
+            Projects/ Languages
             </Link>
           </li>
           <li>

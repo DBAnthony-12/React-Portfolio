@@ -115,41 +115,50 @@
   transition: 0.5s;
 } */
 
-@media(max-width: 768px){
-  .about{
-    gap: 80px;
-    margin: 50px 70px;
-    align-items: start;
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px 20px; /* Adjusted margin for smaller screens */
   }
-  .about-title h1{
-    font-size: 50px;
-    padding: 0px;
+
+  .about-title h1 {
+    font-size: 36px; /* Decrease title font size */
+    padding: 0; /* Reset padding */
   }
-  .about-title img{
-    width: 130px;
-    right: -20px;
+
+  .about-title img {
+    display: none; /* Hide the image next to the title on smaller screens */
   }
+
   .about-sections {
-    flex-direction: column; /* Stack items vertically on smaller screens */
+    flex-direction: column; /* Stack items vertically */
     align-items: center;
   }
 
   .about-right {
-    flex: none; /* Reset the flex property to allow it to grow based on content */
+    flex: none; /* Reset the flex property */
     padding: 0;
-    margin-top: 20px; /* Add some space between the sections */
-    text-align: center; /* Center-align text content */
+    margin-top: 20px; /* Add margin between sections */
+    text-align: center; /* Center align text content */
   }
 
   .about-paragraph {
-    max-width: 100%;
-    padding: 0 20px; /* Add some horizontal padding for better readability */
+    max-width: 100%; /* Ensure paragraph width spans full width */
+    padding: 0 20px; /* Add padding for better readability */
+    margin-bottom: 0; /* Remove bottom margin to reduce gap */
   }
 
   .about-left img {
-    border-radius: 10px; /* Adjust border radius for smaller screens */
+    width: 100%; /* Ensure the image fills its container */
+    max-width: 300px; /* Adjust maximum width for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Adjust border radius */
   }
 }
+
   /* .about-skill{
     gap: 20px;
     align-items: center;
