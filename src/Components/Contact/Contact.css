@@ -53,12 +53,7 @@
   width: 30px;
   height: 30px;
 }
-.image {
-  transition: transform 0.3s ease; /* Define the transition effect */
-}
-.image:hover {
-  transform: scale(1.1); /* Increase the scale on hover */
-}
+
 
 .form-container {
   max-width: 500px; /* Adjust the maximum width as needed */
@@ -117,37 +112,46 @@
   }
   .contact-title h1{
     padding: 0;
-    font-size: 50px;
+    font-size: 36px;
     font-weight: 600;
-  }
-  .contact-title img{
-    width: 130px;
-    margin-right: -20px;
   }
   .contact-section{
     flex-direction: column;
+    gap: 40px;
   }
   .contact-left h1{
-    font-size: 54px;
+    font-size: 32px;
   }
-  .contact-left p{
+  .contact-left p {
     font-size: 18px;
+    line-height: 28px;
   }
-  .contact-detail{
+  .contact-details {
     gap: 20px;
   }
-  .contact-detail img{
+  .contact-detail img {
     width: 25px;
   }
- .form-container{
-  max-width: 100%;
-  padding: 10 10px;
- }
- .contact-right input, .contact-right textarea{
-  width: 100%;
- }
- .contact-submit{
-  width: 100%;
-  margin-top: 20px;
- }
+  .form-container {
+    max-width: 100%;
+    padding: 20px 10px;
+    border: none;
+    box-shadow: none;
+  }
+  .form-container form {
+    padding: 30px 20px;
+  }
+  .form-container label {
+    margin-bottom: 10px;
+  }
+  .form-container input,
+  .form-container textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .form-container button {
+    padding: 10px 20px;
+    width: 100%;
+    margin-top: 10px;
+  }
 }

@@ -15,7 +15,13 @@
       {
         "title": "JavaScript",
         "description": "High-level programming language"
+      },
+      
+      {
+        "title": "Python",
+        "description": "High-level programming language known for simplicity and readability"
       }
+
     ],
     "framework": [
       {

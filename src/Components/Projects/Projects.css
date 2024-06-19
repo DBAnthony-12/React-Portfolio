@@ -1,7 +1,9 @@
+
 .project {
     padding: 80px 0;
     position: relative;
     background-color: black;
+    gap: 18px;
   }
   .project h2 {
       font-size: 45px;
@@ -61,14 +63,17 @@
   .nav-link#projects-tabs-tab-first {
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 55px 0px 0px 55px;
+    font-size: 20px;
   }
   .nav-link#projects-tabs-tab-second {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 20px;
   }
   .nav-link#projects-tabs-tab-third {
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 0 55px 55px 0;
+    font-size: 20px;
   }
   .proj-imgbx {
     position: relative;
@@ -127,6 +132,8 @@
     position: relative;
     overflow: hidden;
     transition: transform 0.2s;
+    gap: 15px;
+    margin-bottom: 25px;
   }
   
   .project-card:hover {
@@ -136,6 +143,7 @@
   .card-image-container {
     position: relative;
     overflow: hidden;
+    gap: 18px;
   }
   
   .card-image {
@@ -160,6 +168,7 @@
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+    gap: 18px;
   }
   
   .card-image-container:hover .card-overlay {
@@ -228,6 +237,27 @@
     color: #666;
   }
 
+  /* Projects.css */
+
+.education-card {
+  margin: 20px auto;
+  color: white;
+  padding: 20px;
+  border: 2px solid #4ccc61;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 20px;
+  /* background-color: whitesmoke; Neutral background color */
+  background: linear-gradient(90.21deg, #f59cd1 -5.91%, #c4c4f0 111.58%);
+}
+
+.education-card:hover {
+  transform: scale(1.05); /* Increase size on hover */
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);  /* Hide text on hover by making it transparent */
+}
+
+
   @media screen and (max-width: 768px) {
     .skills-section-card, .framework-section-card, .database-section-card {
       width: 100%; /* Change card width to fit smaller screens */
@@ -252,7 +282,40 @@
       width: 90%; /* Adjust container width for smaller screens */
     }
   }
+  @media screen and (max-width: 768px) {
+    .education-card {
+      font-size: 18px; /* Decrease font size for smaller screens */
+      padding: 15px; /* Adjust padding */
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .education-card {
+      font-size: 16px; /* Further decrease font size for extra small screens */
+      padding: 12px; /* Further adjust padding */
+    }
+  }
+  @media (max-width: 599px) {
+    .project-card {
+      margin-bottom: 15px;
+      gap: 10px;
+    }
+  }
   
+  /* For medium devices (tablets, 600px and up) */
+  @media (min-width: 600px) and (max-width: 1024px) {
+    .project-card {
+      margin-bottom: 20px;
+      gap: 12px;
+    }
+  }
+  
+  /* For large devices (desktops, 1025px and up) */
+  @media (min-width: 1025px) {
+    .project-card {
+      margin-bottom: 25px;
+      gap: 15px;
+    }
+  }
   
  
   

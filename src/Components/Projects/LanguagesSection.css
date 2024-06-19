@@ -120,6 +120,32 @@
       gap: 10px; /* Adjust gap between cards for smaller screens */
     }
   }
+  @media screen and (max-width: 1024px) {
+    .skills-section-description,
+    .framework-section-description,
+    .database-section-description {
+      font-size: 14px; /* Adjust font size for smaller screens */
+      padding: 10px; /* Adjust padding if necessary */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .skills-section-description,
+    .framework-section-description,
+    .database-section-description {
+      font-size: 12px; /* Further adjust font size for even smaller screens */
+      padding: 8px; /* Adjust padding if necessary */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .skills-section-description,
+    .framework-section-description,
+    .database-section-description {
+      font-size: 10px; /* Further adjust font size for small mobile screens */
+      padding: 5px; /* Adjust padding if necessary */
+    }
+  }
   
   
   

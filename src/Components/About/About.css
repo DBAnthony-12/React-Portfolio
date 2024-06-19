@@ -4,7 +4,9 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
-  margin: 20px;
+  margin: 10px;
+  /* background-color: rgb(27, 27, 27);
+  border-radius: 50px; */
 }
 
 .about-title {
