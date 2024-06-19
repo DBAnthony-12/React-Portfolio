@@ -120,12 +120,37 @@
       gap: 10px; /* Adjust gap between cards for smaller screens */
     }
   }
+  @media screen and (max-width: 768px) {
+    .skills-section-card,
+    .framework-section-card,
+    .database-section-card {
+      width: calc(100% - 20px); /* Increase card width for smaller screens */
+      max-width: 300px; /* Adjust max-width */
+    }
+  
+    .skills-section-heading,
+    .framework-section-heading,
+    .database-section-heading {
+      font-size: 20px; /* Decrease heading font size */
+    }
+  
+    .portfolio-container {
+      margin-bottom: 10px; /* Adjust margin for smaller screens */
+    }
+  
+    .skills-section-container,
+    .framework-section-container,
+    .database-section-container {
+      gap: 10px; /* Adjust gap between cards for smaller screens */
+    }
+  }
+  
   @media screen and (max-width: 1024px) {
     .skills-section-description,
     .framework-section-description,
     .database-section-description {
       font-size: 14px; /* Adjust font size for smaller screens */
-      padding: 10px; /* Adjust padding if necessary */
+      padding: 10px; /* Adjust padding */
     }
   }
   
@@ -133,8 +158,8 @@
     .skills-section-description,
     .framework-section-description,
     .database-section-description {
-      font-size: 12px; /* Further adjust font size for even smaller screens */
-      padding: 8px; /* Adjust padding if necessary */
+      font-size: 12px; /* Further adjust font size for smaller screens */
+      padding: 8px; /* Adjust padding */
     }
   }
   
@@ -142,8 +167,8 @@
     .skills-section-description,
     .framework-section-description,
     .database-section-description {
-      font-size: 10px; /* Further adjust font size for small mobile screens */
-      padding: 5px; /* Adjust padding if necessary */
+      font-size: 12px; /* Adjust font size for small mobile screens */
+      padding: 10px; /* Adjust padding */
     }
   }
   
