@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import me2 from "../../assets/me2.jpg";
+import resume from "../../assets/resume.pdf"
 import { Link } from "react-scroll";
 
 const Hero = () => {
@@ -25,7 +26,9 @@ const Hero = () => {
             Connect with me
           </Link>
         </div>
-        <div className="hero-resume">My resume</div> 
+        <a href={resume} target="_blank" rel="noopener noreferrer">
+          <div className="hero-resume">View Resume</div>
+        </a>
         <div className="contactMe">Contact me</div>
       </div>
     </div>
