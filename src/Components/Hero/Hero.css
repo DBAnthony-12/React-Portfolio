@@ -8,7 +8,7 @@
 .hero img {
   margin-top: 15px;
   width: 20%;
-  height: 20%;
+  height: auto;
   border-radius: 50px;
 }
 
@@ -42,22 +42,28 @@
   margin-bottom: 10px;
 }
 
-.hero-connect {
-  padding: 25px 45px;
-  border-radius: 50px;
-  background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
-  cursor: pointer;
-}
 .hero-resume {
-  padding: 25px 45px;
-  border-radius: 50px;
-  border: 2px solid #fff;
+  padding: 25px 40px;
+  border-radius: 40px;
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
   cursor: pointer;
 }
-.hero-connect:hover {
-  border: 2px solid white;
+.contactMe {
+  display: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  color: #fff;
+  cursor: pointer;
 }
+
+/* .hero-connect:hover {
+  border: 2px solid white;
+} */
 .hero-resume:hover {
+  border-color: #b415ff;
+}
+.contactMe:hover {
   border-color: #b415ff;
 }
 
@@ -88,7 +94,33 @@
     border-radius: 40px;
   }
   .hero-resume{
-    padding: 20px 50px;
+    padding: 10px 30px;
     border-radius: 40px;
+   
+  }
+  .contactMe {
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    background-color: #b415ff;
+    color:#fff;
+    cursor: pointer;
+   
+  }
+  .hero-resume, .contactMe {
+    width: 50%; /* Take 50% width on small screens */
+    text-align: center; /* Center text inside the div */
+    padding: 15px 30px; /* Adjust padding as needed */
+    border-radius: 40px; /* Rounded corners */
+    cursor: pointer;
+    
+  }
+  .nav-connect {
+    margin-bottom: 20px; /* Increase margin for better spacing */
+  }
+}
+@media (max-width: 768px) {
+  .contactMe {
+    display: block; /* Show on smaller screens */
   }
 }

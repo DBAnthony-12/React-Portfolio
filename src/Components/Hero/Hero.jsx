@@ -25,7 +25,8 @@ const Hero = () => {
             Connect with me
           </Link>
         </div>
-        <div className="hero-resume">My resume</div>
+        <div className="hero-resume">My resume</div> 
+        <div className="contactMe">Contact me</div>
       </div>
     </div>
   );

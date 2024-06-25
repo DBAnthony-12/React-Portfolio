@@ -38,7 +38,7 @@ export const Projects = () => {
       title: "Tic-Tac-Toe Game",
       description: "Tic-Tac-Toe Game ",
       imgUrl: project4,
-      link: "verdant-sundae-e291a8.netlify.app" 
+      link: "https://admirable-scone-7b46e6.netlify.app/" 
     },
 
   ];
