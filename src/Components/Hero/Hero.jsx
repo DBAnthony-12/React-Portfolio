@@ -38,7 +38,7 @@ const Hero = () => {
 
         <div className="resume-container">
           <a
-            href="http://localhost:5173/src/assets/resume.pdf"
+            href="https://drive.google.com/file/d/1sLInhdiokZ7zArBDzVTjBMGQVCxjyHXa/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-link"
