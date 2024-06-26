@@ -44,7 +44,7 @@
 
 .resume-container {
   border: 2px solid white;
-  padding: 20px 30px;
+  padding: 10px 30px;
   border-radius: 40px;
   background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
   cursor: pointer;
@@ -103,18 +103,7 @@
     padding: 20px 30px;
     border-radius: 40px;
   }
-  .resume-container {
-    padding: 20px 30px;
-    border-radius: 40px;
-    font-size: 16px;
-  }
-  .contactMe {
-    display: inline-block;
-    padding: 10px 30px;
-    border-radius: 50px;
-    color: #fff;
-    cursor: pointer;
-  }
+
   .resume-container,
   .contactMe {
     width: 50%; /* Take 50% width on small screens */
@@ -123,13 +112,7 @@
     border-radius: 40px; /* Rounded corners */
     cursor: pointer;
   }
-  .resume-container {
-    display: inline-block;
-    padding: 0px 30px;
-    border-radius: 50px;
-    color: white;
-    cursor: pointer;
-  }
+
   .nav-connect {
     margin-bottom: 20px; /* Increase margin for better spacing */
   }
@@ -137,5 +120,20 @@
 @media (max-width: 768px) {
   .contactMe {
     display: block; /* Show on smaller screens */
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .resume-container {
+    display: inline-block;
+    padding: 0px 5px;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    font-size: 10px;
+  }
+  .resume-container .btn {
+    font-size: 20px;
+    padding: 0px 20px;
   }
 }
