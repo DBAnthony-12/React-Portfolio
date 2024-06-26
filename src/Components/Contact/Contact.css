@@ -23,7 +23,7 @@
   flex-direction: column;
   gap: 30px;
 }
-.contact-left h1 {
+.contact-left h2 {
   font-size: 40px;
   font-weight: 600;
   background: linear-gradient(270deg, #df8908 80%, #b415ff 100%);
@@ -40,6 +40,7 @@
 .contact-details {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
   color: #d8d8d8;
   font-size: 22px;
@@ -48,12 +49,12 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  text-align: center;
 }
 .contact-detail img {
   width: 30px;
   height: 30px;
 }
-
 
 .form-container {
   max-width: 500px; /* Adjust the maximum width as needed */
@@ -68,7 +69,7 @@
   background-color: #f9f9f9; /* Set background color for the form */
   padding: 50px; /* Add padding for spacing */
   border-radius: 8px; /* Add border radius for rounded corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  box-shadow: 0 0 10px rgba(230, 144, 201, 0.767); /* Add box shadow for depth */
   background: linear-gradient(264deg, #eedf5a -5.09%, #b415ff 106.28%);
 }
 
@@ -104,72 +105,77 @@
   transition: 0.3s;
 }
 
+/*media queries*/
 @media (max-width: 768px) {
   .contact {
     gap: 50px;
     margin: 50px 20px; /* Adjusted margin for smaller screens */
     align-items: center; /* Center align items */
   }
-  
+
   .contact-title h1 {
     padding: 0;
     font-size: 36px;
     font-weight: 600;
-    background: linear-gradient(270deg, #df8908 80%, #b415ff 100%);
+    color: linear-gradient(270deg, #df8908 80%, #b415ff 100%);
   }
-  
+
   .contact-section {
     flex-direction: column;
     gap: 40px;
     align-items: center; /* Center align items */
   }
-  
+
   .contact-left {
     text-align: center; /* Center text inside contact-left */
   }
-  
-  .contact-left h1 {
+
+  .contact-left h2 {
     font-size: 32px;
+    background: rgba(227, 70, 233, 0.767);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-  
+
   .contact-left p {
     font-size: 18px;
     line-height: 28px;
     max-width: 100%; /* Ensure the paragraph doesn't exceed container width */
   }
-  
+
   .contact-details {
     gap: 20px;
     align-items: center; /* Center align items */
   }
-  
+
   .contact-detail img {
     width: 25px;
   }
-  
+
   .form-container {
     max-width: 100%;
     padding: 20px 10px;
-    border: none;
-    box-shadow: none;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(227, 70, 233, 0.767);
     text-align: center; /* Center text inside form-container */
   }
-  
+
   .form-container form {
     padding: 30px 20px;
   }
-  
+
   .form-container label {
     margin-bottom: 10px;
     text-align: left; /* Align labels to the left */
   }
-  
+
   .form-container input,
   .form-container textarea {
     padding: 10px;
     margin-bottom: 10px;
   }
-  
+
   .form-container button {
     padding: 10px 20px;
     width: 100%;
@@ -177,49 +183,53 @@
   }
 }
 
+/*media queries*/
 @media (max-width: 480px) {
   .contact {
     gap: 30px;
     margin: 30px 10px; /* Adjusted margin for smaller screens */
   }
-  
+
   .contact-section {
     gap: 20px;
   }
-  
-  .contact-left h1 {
+
+  .contact-left h2 {
     font-size: 28px;
+    background: linear-gradient(270deg, #df8908, #b415ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-  
+
   .contact-left p {
     font-size: 16px;
     line-height: 24px;
   }
-  
+
   .contact-details {
     gap: 15px;
   }
-  
+
   .contact-detail img {
     width: 20px;
   }
-  
+
   .form-container form {
     padding: 20px 10px;
   }
-  
+
   .form-container label {
     margin-bottom: 8px;
   }
-  
+
   .form-container input,
   .form-container textarea {
     padding: 8px;
     margin-bottom: 8px;
   }
-  
+
   .form-container button {
     padding: 8px 16px;
   }
 }
-

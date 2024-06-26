@@ -41,7 +41,6 @@ const Hero = () => {
             href="https://drive.google.com/file/d/1sLInhdiokZ7zArBDzVTjBMGQVCxjyHXa/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-link"
           >
             <button className="btn">View Resume</button>
           </a>
