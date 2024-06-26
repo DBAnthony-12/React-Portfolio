@@ -44,7 +44,7 @@
 
 .resume-container {
   border: 2px solid white;
-  padding: 10px 30px;
+  padding: 0px 30px;
   border-radius: 40px;
   background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
   cursor: pointer;
@@ -53,7 +53,7 @@
 }
 .resume-container .btn {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
 }
 .resume-container:hover {
   transform: scale(1.05);
@@ -67,11 +67,9 @@
   background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
   color: #fff;
   cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
 }
-
-/* .hero-connect:hover {
-  border: 2px solid white;
-} */
 
 .contactMe:hover {
   border-color: #b415ff;
@@ -106,11 +104,10 @@
 
   .resume-container,
   .contactMe {
-    width: 50%; /* Take 50% width on small screens */
-    text-align: center; /* Center text inside the div */
-    padding: 15px 30px; /* Adjust padding as needed */
-    border-radius: 40px; /* Rounded corners */
-    cursor: pointer;
+    display: inline-block; /* Stack elements vertically */
+    width: 50%; /* Full width */
+    text-align: center;
+    margin: 0px 0; /* Space between elements */
   }
 
   .nav-connect {
@@ -118,22 +115,34 @@
   }
 }
 @media (max-width: 768px) {
+  .resume-container,
   .contactMe {
-    display: block; /* Show on smaller screens */
-    font-size: 20px;
+    display: block; /* Stack elements vertically */
+    width: 90%; /* Slightly reduced width to provide side padding */
+    text-align: center;
+    margin: 10px auto; /* Center align with auto margins */
+    padding: 10px 0; /* Adjust padding as needed */
   }
-}
-@media (max-width: 768px) {
+
   .resume-container {
-    display: inline-block;
-    padding: 0px 5px;
+    padding: 0px 0;
     border-radius: 40px;
-    color: white;
-    cursor: pointer;
-    font-size: 10px;
+    font-size: 20px;
+    margin: 5px auto; /* Center align with auto margins */
   }
+
   .resume-container .btn {
     font-size: 20px;
-    padding: 0px 20px;
+    padding: 0px 10px; /* Ensure button has padding */
+  }
+
+  .contactMe {
+    font-size: 20px;
+    margin: 10px auto; /* Center align with auto margins */
+    padding: 15px 0; /* Adjust padding as needed */
+  }
+
+  .nav-connect {
+    margin-bottom: 20px; /* Increase margin for better spacing */
   }
 }
