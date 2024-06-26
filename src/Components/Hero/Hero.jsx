@@ -38,7 +38,7 @@ const Hero = () => {
 
         <div className="resume-container">
           <a
-            href={resume}
+            href="http://localhost:5173/src/assets/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-link"
