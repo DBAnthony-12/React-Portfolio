@@ -33,119 +33,99 @@
   line-height: 40px;
 }
 
-.hero-action {
+.button-container {
   display: flex;
-  align-items: center;
-  gap: 15px;
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 10px;
+  justify-content: center; /* Center align the buttons horizontally */
+  align-items: center; /* Center align the buttons vertically */
+  gap: 10px; /* Add space between the buttons */
+  margin-bottom: 10px; /* Space at the bottom of the button container */
 }
 
+.know-more,
 .resume-container {
   border: 2px solid white;
-  padding: 15px 30px;
+  padding: 10px 20px;
   border-radius: 40px;
-  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
-  cursor: pointer;
-  text-align: center;
-  transition: 0.5s;
-}
-.resume-container .btn {
-  color: white;
-  font-size: 20px;
-}
-.resume-container:hover {
-  transform: scale(1.05);
-}
-
-.contactMe {
-  border: 2px solid white;
-  display: none;
-  padding: 10px 30px;
-  border-radius: 50px;
   background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
   color: #fff;
   cursor: pointer;
   text-align: center;
   transition: 0.5s;
+  flex: 1; /* Ensure both buttons take up equal space */
+  margin: 0 5px; /* Space between the buttons */
 }
 
-.contactMe:hover {
+.know-more.btn {
+  width: 100%;
+  padding: 10px 20px; /* Reduced vertical padding */
+  overflow: hidden; /* Hide overflow if necessary */
+  text-overflow: ellipsis; /* Show ellipsis if text overflows */
+}
+
+.resume-container .btn {
+  width: 100%;
+  padding: 10px 0; /* Reduced vertical padding */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow if necessary */
+}
+
+.know-more .btn,
+.resume-container .btn {
+  font-size: 20px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.know-more:hover,
+.resume-container:hover {
   border-color: #b415ff;
+  transform: scale(1.05);
 }
 
+.know-more a,
+.resume-container a {
+  text-decoration: none;
+  color: inherit; /* Ensures text color matches parent */
+}
+
+.know-more a:hover,
+.resume-container a:hover {
+  text-decoration: none; /* Remove underline on hover */
+  color: inherit; /* Maintain text color */
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .hero img {
     margin-top: 15px;
     width: 220px;
   }
+
   .hero h1 {
     margin-top: 10px;
     width: 90%;
     font-size: 30px;
   }
+
   .hero h1 span {
     font-size: 35px;
   }
+
   .hero p {
     width: 60%;
     font-size: 17px;
     line-height: 32px;
     margin: 10px 0px;
   }
-  .hero-action {
-    gap: 16px;
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 50px;
-  }
-  .hero-connect {
-    padding: 20px 30px;
-    border-radius: 40px;
+
+  .button-container {
+    flex-direction: row; /* Stack buttons vertically on smaller screens */
+    align-items: stretch; /* Ensure buttons take up full width */
   }
 
-  .resume-container,
-  .contactMe {
-    display: inline-block; /* Stack elements vertically */
-    width: 50%; /* Full width */
-    text-align: center;
-    margin: 0px 0; /* Space between elements */
-  }
-
-  .nav-connect {
-    margin-bottom: 20px; /* Increase margin for better spacing */
-  }
-}
-@media (max-width: 768px) {
-  .resume-container,
-  .contactMe {
-    display: block; /* Stack elements vertically */
-    width: 90%; /* Slightly reduced width to provide side padding */
-    text-align: center;
-    margin: 10px auto; /* Center align with auto margins */
-    padding: 10px 0; /* Adjust padding as needed */
-  }
-
+  .know-more,
   .resume-container {
-    padding: 0px 0;
-    border-radius: 40px;
-    font-size: 20px;
-    margin: 5px auto; /* Center align with auto margins */
-  }
-
-  .resume-container .btn {
-    font-size: 20px;
-    padding: 0px 10px; /* Ensure button has padding */
-  }
-
-  .contactMe {
-    font-size: 20px;
-    margin: 10px auto; /* Center align with auto margins */
-    padding: 15px 0; /* Adjust padding as needed */
-  }
-
-  .nav-connect {
-    margin-bottom: 20px; /* Increase margin for better spacing */
+    flex: 0 0 auto;
+    width: auto; /* Optional: make buttons take up most of the screen width */
   }
 }

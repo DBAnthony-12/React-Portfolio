@@ -19,23 +19,23 @@ const About = () => {
         <div className="about-right">
           <div className="about-paragraph">
             <p>
-              Hi, my name is Dilshaad. I am a passionate Software Developer with
-              a deep enthusiasm for the IT field. My journey began with a love
-              for computers and coding, which naturally led me to pursue a
-              career in software development. I completed my studies in Software
-              Development at Rosebank College, which laid the foundation for my
-              current career. I am dedicated to helping others by developing
-              websites for those starting businesses or needing an online
-              presence for various reasons. I continuously push the boundaries
-              of technology to solve programming problems and find innovative
-              solutions. Over the course of my 3-year study period, I have
-              acquired a diverse skill set in various programming languages,
-              frameworks, and tools. Among my areas of competence are: Frontend
+              Hi, I am a passionate Software Developer with a deep enthusiasm
+              for the IT field. My journey began with a love for computers and
+              coding, which naturally led me to pursue a career in software
+              development. I completed my studies in Software Development at
+              Rosebank College, which laid the foundation for my current career.
+              I am dedicated to helping others by developing websites for those
+              starting businesses or needing an online presence for various
+              reasons. I continuously push the boundaries of technology to solve
+              programming problems and find innovative solutions. Over the
+              course of my 3-year study period, I have acquired a diverse skill
+              set in various programming languages, frameworks, and tools.
+              {/* Among my areas of competence are: Frontend
               Development: Creating dynamic and user-friendly user interfaces.
               Building dependable server-side programs and APIs is known as
               backend development. Database management: Making sure information
               is stored and retrieved quickly. DevOps: Maintaining scalable
-              systems and streamlining deployment methods.
+              systems and streamlining deployment methods. */}
               {/* My expertise includes:
               <ul>
                 <li>

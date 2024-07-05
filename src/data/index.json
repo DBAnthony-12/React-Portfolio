@@ -1,47 +1,38 @@
 {
-    "skills": [
-      {
-        "title": "HTML",
-        "description": "Hypertext Markup Language"
-      },
-      {
-        "title": "CSS",
-        "description": "Cascading Style Sheets"
-      },
-      {
-        "title": "Java",
-        "description": "Object-oriented programming language"
-      },
-      {
-        "title": "JavaScript",
-        "description": "High-level programming language"
-      },
-      
-      {
-        "title": "Python",
-        "description": "High-level programming language known for simplicity and readability"
-      }
-
-    ],
-    "framework": [
-      {
-        "title": "NodeJs",
-        "description": "JavaScript runtime environment"
-      },
-      {
-        "title": "ReactJs",
-        "description": "JavaScript library for building user interfaces"
-      }
-    ],
-    "databases": [
-      {
-        "title": "Oracle Database",
-        "description": "Multi-model database management system"
-      },
-      {
-        "title": "SQL Database",
-        "description": "Structured Query Language"
-      }
-    ]
-  }
-  
+  "skills": [
+    {
+      "title": "HTML"
+    },
+    {
+      "title": "CSS"
+    },
+    {
+      "title": "Java"
+    },
+    {
+      "title": "JavaScript"
+    },
+    {
+      "title": "Python"
+    },
+    {
+      "title": "C-Sharp"
+    }
+  ],
+  "framework": [
+    {
+      "title": "Node.js"
+    },
+    {
+      "title": "React"
+    }
+  ],
+  "databases": [
+    {
+      "title": "Oracle Database"
+    },
+    {
+      "title": "SQL Database"
+    }
+  ]
+}

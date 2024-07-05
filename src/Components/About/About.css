@@ -51,7 +51,7 @@
 
 .about-left img {
   width: 100%; /* Ensure the image fills its container */
-  max-width: 330px; /* Set a maximum width for the image */
+  max-width: 250px; /* Set a maximum width for the image */
   height: auto; /* Let the height adjust proportionally */
   border-radius: 50px;
 }

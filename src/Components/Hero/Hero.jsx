@@ -22,8 +22,9 @@ const Hero = () => {
         languages, I bring creativity and innovation to every project. Let's
         build something amazing together!
       </p>
-      <div className="hero-action">
-        <div className="nav-connect">
+
+      <div className="button-container">
+        <div className="know-more">
           <Link
             to="contact"
             spy={true}
@@ -32,7 +33,7 @@ const Hero = () => {
             duration={500}
             onClick={closeMenu}
           >
-            Connect with me
+            <button className="btn">Contact me</button>
           </Link>
         </div>
 
@@ -41,24 +42,24 @@ const Hero = () => {
             href="https://drive.google.com/file/d/1sLInhdiokZ7zArBDzVTjBMGQVCxjyHXa/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
-            // className="btn-link"
+            className="link"
           >
             <button className="btn">View Resume</button>
           </a>
         </div>
 
-        <div className="contactMe">
+        {/* <div className="contactMe">
           <Link
             to="contact"
             spy={true}
             smooth={true}
-            offset={5}
+            offset={-70} // Adjust offset as needed
             duration={500}
             onClick={closeMenu}
           >
-            Contact me
+            <button className="btn">Contact me</button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

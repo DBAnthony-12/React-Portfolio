@@ -1,6 +1,7 @@
 import React from "react";
 import "./LanguagesSection.css"; // Ensure you have appropriate CSS
 import data from "../../data/index.json"; // Adjust the path if necessary
+import csharp from "../../assets/c-sharp.png"; // Ensure the path is correct
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHtml5,
@@ -8,7 +9,8 @@ import {
   faJava,
   faJs,
   faNodeJs,
-  faReact
+  faReact,
+  faPython,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
@@ -26,7 +28,12 @@ const getIcon = (title) => {
       return faNodeJs;
     case "React":
       return faReact;
-    case "Database":
+    case "Python":
+      return faPython;
+    case "C-Sharp":
+      return csharp; // Return the image path for C-Sharp
+    case "Oracle Database":
+    case "SQL Database":
       return faDatabase;
     default:
       return null;
@@ -36,7 +43,6 @@ const getIcon = (title) => {
 const LanguagesSection = () => {
   return (
     <div className="languages-section">
-
       <section className="skills-section">
         <div className="portfolio-container">
           <h2 className="skills-section-heading">My Skills</h2>
@@ -45,13 +51,29 @@ const LanguagesSection = () => {
           {data?.skills?.map((item, index) => (
             <div key={index} className="skills-section-card">
               <div className="skills-section-img">
-                <FontAwesomeIcon icon={getIcon(item.title)} className="icon-style" />
+                {typeof getIcon(item.title) === "string" ? (
+                  <img
+                    src={getIcon(item.title)}
+                    alt={item.title}
+                    className="icon-style"
+                  />
+                ) : (
+                  <FontAwesomeIcon
+                    icon={getIcon(item.title)}
+                    className="icon-style"
+                  />
+                )}
               </div>
-            <div className="skills-section-card-content">
-              <h3 className="skills-section-title" style={{ color: 'white' }}>{item.title}</h3>
-              <p className="skills-section-description" style={{ color: 'white' }}>{item.description}</p>
-           </div>
-          </div>
+              <div className="skills-section-card-content">
+                <h3 className="skills-section-title" style={{ color: "white" }}>
+                  {item.title}
+                </h3>
+                <p
+                  className="skills-section-description"
+                  style={{ color: "white" }}
+                ></p>
+              </div>
+            </div>
           ))}
         </div>
       </section>
@@ -64,12 +86,20 @@ const LanguagesSection = () => {
           {data?.framework?.map((item, index) => (
             <div key={index} className="framework-section-card">
               <div className="framework-section-img">
-                <FontAwesomeIcon icon={getIcon(item.title)} className="icon-style" />
+                <FontAwesomeIcon
+                  icon={getIcon(item.title)}
+                  className="icon-style"
+                />
               </div>
-            <div className="framework-section-card-content">
-              <h3 className="framework-title" style={{ color: 'white' }}>{item.title}</h3>
-              <p className="framework-section-description" style={{ color: 'white' }}>{item.description}</p>
-            </div>
+              <div className="framework-section-card-content">
+                <h3 className="framework-title" style={{ color: "white" }}>
+                  {item.title}
+                </h3>
+                <p
+                  className="framework-section-description"
+                  style={{ color: "white" }}
+                ></p>
+              </div>
             </div>
           ))}
         </div>
@@ -78,12 +108,23 @@ const LanguagesSection = () => {
           {data?.databases?.map((item, index) => (
             <div key={index} className="database-section-card">
               <div className="database-section-img">
-                <FontAwesomeIcon icon={getIcon(item.title)} className="icon-style" />
+                <FontAwesomeIcon
+                  icon={getIcon(item.title)}
+                  className="icon-style"
+                />
               </div>
-            <div className="database-section-card-content">
-              <h3 className="database-section-title" style={{ color: 'white' }}>{item.title}</h3>
-              <p className="database-section-description" style={{ color: 'white' }}>{item.description}</p>
-            </div>
+              <div className="database-section-card-content">
+                <h3
+                  className="database-section-title"
+                  style={{ color: "white" }}
+                >
+                  {item.title}
+                </h3>
+                <p
+                  className="database-section-description"
+                  style={{ color: "white" }}
+                ></p>
+              </div>
             </div>
           ))}
         </div>

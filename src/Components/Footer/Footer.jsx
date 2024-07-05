@@ -1,7 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import logo from "../../assets/nameLogo.png";
-import user from "../../assets/user_icon.png";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -24,7 +22,7 @@ const Footer = () => {
       <hr />
       <div className="footer-bottom">
         <p className="footer-bottom-left">
-          2024 Dilshaad Anthony. All rights reserved
+          Copyright @ Dilshaad Anthony. All rights reserved 2024
         </p>
         <div className="footer-bottom-right">
           <p>Terms of Services</p>
@@ -33,7 +31,7 @@ const Footer = () => {
             <p>Connect with me</p>
             <div className="social-icons">
               <a
-                href="https://github.com/DBAnthony-12/chatApp"
+                href="https://github.com/DBAnthony-12?tab=repositories"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-icon"
