@@ -6,10 +6,8 @@ import project1 from "../../assets/project1.png";
 import project2 from "../../assets/BuzzChatApp.png";
 import project3 from "../../assets/LandingPage.png";
 import project4 from "../../assets/Tic-Tac-Toe.png";
-import Card from 'react-bootstrap/Card';
+import Card from "react-bootstrap/Card";
 import LanguagesSection from "./LanguagesSection";
-
-
 
 export const Projects = () => {
   const projects = [
@@ -17,36 +15,35 @@ export const Projects = () => {
       title: "Website",
       description: "Fashion Set Go Project",
       imgUrl: project1,
-      link: "https://fashion-set-go.netlify.app/"
+      link: "https://fashion-set-go-website.netlify.app/",
     },
 
     {
       title: "Chat App",
       description: "Chat App",
       imgUrl: project2,
-      link: "https://buzzchatapp.onrender.com" // Replace "#" with the actual link for the Chat App
+      link: "https://buzzchatapp.onrender.com", // Replace "#" with the actual link for the Chat App
     },
 
     {
       title: "Landing Page",
       description: "Landing Page ",
       imgUrl: project3,
-      link: "https://precious-raindrop-e02bd5.netlify.app/"
+      link: "https://precious-raindrop-e02bd5.netlify.app/",
     },
 
     {
       title: "Tic-Tac-Toe Game",
       description: "Tic-Tac-Toe Game ",
       imgUrl: project4,
-      link: "https://admirable-scone-7b46e6.netlify.app/" 
+      link: "https://admirable-scone-7b46e6.netlify.app/",
     },
-
   ];
 
   const educationDetails = [
     "Went to JG Meiring High School.",
     "Studied at Rosebank College, completed my Diploma in Software Development.",
-    "CapaCiti: Completing a 6 month course."
+    "CapaCiti: Completing a 6 month course.",
   ];
 
   return (
@@ -63,13 +60,19 @@ export const Projects = () => {
                 id="pills-tab"
               >
                 <Nav.Item>
-                  <Nav.Link eventKey="first" className="nav-link-custom">Projects</Nav.Link>
+                  <Nav.Link eventKey="first" className="nav-link-custom">
+                    Projects
+                  </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second" className="nav-link-custom">Skills</Nav.Link>
+                  <Nav.Link eventKey="second" className="nav-link-custom">
+                    Skills
+                  </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third" className="nav-link-custom">Education</Nav.Link>
+                  <Nav.Link eventKey="third" className="nav-link-custom">
+                    Education
+                  </Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
@@ -81,7 +84,7 @@ export const Projects = () => {
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
-                    <LanguagesSection/>
+                  <LanguagesSection />
                 </Tab.Pane>
                 <Tab.Pane eventKey="third">
                   {educationDetails.map((detail, index) => (
