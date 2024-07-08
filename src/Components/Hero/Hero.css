@@ -62,6 +62,8 @@
   text-overflow: ellipsis; /* Show ellipsis if text overflows */
 }
 
+/*Button stylimg*/
+
 .resume-container .btn {
   width: 100%;
   padding: 10px 0; /* Reduced vertical padding */
@@ -82,13 +84,11 @@
   transform: scale(1.05);
 }
 
-.know-more a,
 .resume-container a {
   text-decoration: none;
   color: inherit; /* Ensures text color matches parent */
 }
 
-.know-more a:hover,
 .resume-container a:hover {
   text-decoration: none; /* Remove underline on hover */
   color: inherit; /* Maintain text color */
