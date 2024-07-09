@@ -6,37 +6,58 @@ import project1 from "../../assets/project1.png";
 import project2 from "../../assets/BuzzChatApp.png";
 import project3 from "../../assets/LandingPage.png";
 import project4 from "../../assets/Tic-Tac-Toe.png";
+import project5 from "../../assets/Calcu.png"
+import project6 from "../../assets/Bankingapp.png"
+import project7 from "../../assets/LMS.png"
 import Card from "react-bootstrap/Card";
 import LanguagesSection from "./LanguagesSection";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "Website",
-      description: "Fashion Set Go Project",
+      title: " Website",
+      description: " HTML&CSS Fashion Set Go Project",
       imgUrl: project1,
       link: "https://fashion-set-go-website.netlify.app/",
     },
 
     {
       title: "Chat App",
-      description: "Chat App",
+      description: " React and Node Chat App",
       imgUrl: project2,
       link: "https://buzzchatapp.onrender.com", // Replace "#" with the actual link for the Chat App
     },
 
     {
       title: "Landing Page",
-      description: "Landing Page ",
+      description: "HTML&CSS Landing Page ",
       imgUrl: project3,
       link: "https://precious-raindrop-e02bd5.netlify.app/",
     },
 
     {
       title: "Tic-Tac-Toe Game",
-      description: "Tic-Tac-Toe Game ",
+      description: " HTML, CSS & JavaScript Tic-Tac-Toe Game ",
       imgUrl: project4,
       link: "https://admirable-scone-7b46e6.netlify.app/",
+    },
+    {
+      title: "Calculator",
+      description: "HTML,CSS & JavaScript Calculator ",
+      imgUrl: project5,
+      link: "https://calcu-styling.netlify.app",
+    },
+    {
+      title: "Banking App",
+      description: "Python Banking App ",
+      imgUrl: project6,
+      link: "https://github.com/DBAnthony-12/Banking-App",
+    },
+    {
+      title: "Library Managment System",
+      description: "Java Library Managment System ",
+      imgUrl: project7,
+      link: "https://github.com/McengwaAyanda/Library-Management-System-java",
     },
   ];
 
