@@ -62,9 +62,9 @@ export const Projects = () => {
   ];
 
   const educationDetails = [
-    "Went to JG Meiring High School.",
-    "Studied at Rosebank College, completed my Diploma in Software Development.",
-    "CapaCiti: Completing a 6 month course.",
+    "High School: Matriculated in 2020 at JG Meiring High School.",
+    "College: Studied at Rosebank College, completed a Diploma in Software Development.",
+    "CapaCiti: Completed a 6 month course at CapaCiti.",
   ];
 
   return (
