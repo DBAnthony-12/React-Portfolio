@@ -2,7 +2,6 @@
   padding: 20px;
   background-color: #333;
   color: white;
-  font-size: 18px;
 }
 
 .footer-top,
@@ -10,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 18px;
 }
 .footer-top-right,
 .footer-top-left {
