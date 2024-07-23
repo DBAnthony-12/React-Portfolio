@@ -6,9 +6,9 @@ import project1 from "../../assets/project1.png";
 import project2 from "../../assets/BuzzChatApp.png";
 import project3 from "../../assets/LandingPage.png";
 import project4 from "../../assets/Tic-Tac-Toe.png";
-import project5 from "../../assets/Calcu.png"
-import project6 from "../../assets/Bankingapp.png"
-import project7 from "../../assets/LMS.png"
+import project5 from "../../assets/Calcu.png";
+import project6 from "../../assets/Bankingapp.png";
+import project7 from "../../assets/LMS.png";
 import Card from "react-bootstrap/Card";
 import LanguagesSection from "./LanguagesSection";
 
@@ -51,7 +51,8 @@ export const Projects = () => {
       title: "Banking App",
       description: "Python Banking App ",
       imgUrl: project6,
-      link: "https://github.com/DBAnthony-12/Banking-App",
+      link: "https://drive.google.com/file/d/1Nt4_uxPuTmvjGM05V0ZWExsymyenGX1K/view?usp=drive_link",
+      // link: "https://github.com/DBAnthony-12/Banking-App",
     },
     {
       title: "Library Managment System",
